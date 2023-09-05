@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<!--
+  -- Space Exploration Technologies Corp.
+  -- @version 1.0
+  -- @date 06.02.2020
+  -- @url https://skywards-aerospace.com
+-->
+<html>
+<head>
+  
+<style>body {
+  background-color: silver; /* Couleur bleu sombre de l'arrière-plan */
+  color: #f8f8f8; /* Couleur blanche-gris du texte */
+}
+</style>
+	<title>Skywards Horizons</title>
+ <style>
+  header {
+        display: flex;
+        align-items: center;
+         }
+  h1 {
+        margin-top: 0;
+      }
+<link rel="stylesheet" href="Skywards Aerospace.css">
+</head>
+
+<body>
+  font-size: 100%;
+}
+
+.navigation {
+	background-color: white;
+	height: 30px;
+ 	margin-bottom: 4px;
+ 	margin-left: 2px;
+ 	margin-left: 20px;
+ 	margin-right: 10px;
+ 	margin-top: 1.5em;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+.navigation ul li {
+	background-color: white;
+	list-style-type: none;
+	display: block;
+	font-size: 115%;
+	font-weight: bold;
+	float: left;
+	display: block;
+	margin-left: 4px;
+	margin-top: 0.4em;
+}
+
+.navigation ul li a:link, .navigation ul li a:visited {
+	display: block;
+	text-decoration: none;
+  color: black;
+	border-right: 3px solid #B0916E;
+	padding-right: 6px;
+	padding-left: 6px;
+	}
+	
+.navigation ul li.active a {
+	color: #10294a;
+	color: white;
+	color: #B0916E;
+}
+
+.navigation ul li a:hover {
+	display: block;
+	text-decoration: none;
+	background-color: #B0916E;
+	color: #10294a;
+	color: white;
+}
+
+.infoboxtitle {
+	border: 1px solid #DDDDDD; 
+	background-color: #DDDDDD;
+	padding: 2px  0px 2px 2em;
+	font-weight: bold;
+	color: black;
+	font-size: 110%;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-topright: 5px;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+
+}
+
+.infobox {
+	border: 1px solid #DDDDDD;
+
+	}
+	
+.infoboxtitlegrad {
+	padding: 2px  0px 2px 5px;
+	/*font-weight: bold;*/
+	color: black;
+	font-size: 120%;
+  background-color: #DDDDDD; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right, #C2C9DE, #EAEFF6);
+}
+
+.infoboxtitlelinks {
+  float:right;
+  text-decoration: none;color:black;
+}
+
+.pagetitle {
+  border-bottom: 3px solid #B0916E;
+  margin-top: 8px;
+  }
+  
+td.footer
+{
+	color: black;
+	padding: 6px 8px;
+	padding: 5px 7px;
+	text-align: left;
+	text-decoration: none;
+}
+</style>
+
+     <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Month');
+        data.addColumn('number', '2023');
+        data.addColumn('number', '5-yr average');
+        data.addRows(12);
+data.setValue(0, 0, 'Jan');
+data.setValue(0, 1, 72);
+data.setValue(0, 2, 47.6);
+data.setValue(1, 0, 'Feb');
+data.setValue(1, 1, 73);
+data.setValue(1, 2, 79.4);
+data.setValue(2, 0, 'Mar');
+data.setValue(2, 1, 73);
+data.setValue(2, 2, 152.4);
+data.setValue(3, 0, 'Apr');
+data.setValue(3, 1, 73);
+data.setValue(3, 2, 152.8);
+data.setValue(4, 0, 'May');
+data.setValue(4, 1, 73);
+data.setValue(4, 2, 211.2);
+data.setValue(5, 0, 'Jun');
+
+data.setValue(5, 2, 215);
+data.setValue(6, 0, 'Jul');
+
+data.setValue(6, 2, 223);
+data.setValue(7, 0, 'Aug');
+
+data.setValue(7, 2, 233.8);
+data.setValue(8, 0, 'Sep');
+
+data.setValue(8, 2, 244);
+data.setValue(9, 0, 'Oct');
+
+data.setValue(9, 2, 285.2);
+data.setValue(10, 0, 'Nov');
+
+data.setValue(10, 2, 295);
+data.setValue(11, 0, 'Dec');
+
+data.setValue(11, 2, 300.8);
+   
+        var chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, {width: 170, height: 145, title: 'Fatalities', legend: 'top'});
+      }
+    <script>
+    <div class="toggle-switch"; class="main">
+  <input type="checkbox" id="dark-mode-toggle"">
+   </script>
+   
+ <label class="switch">
+  <input type="checkbox" id="modeSwitch">
+  <span class="slider"></span>
+</label>
+
+
+
+	<h1 style="text-align:center;color:grey;background-color:green"><h1 class="subtitle"; class="title"; id="myTitle"><p12> Skywards Aerospace</p12></h1>
+<div class="separator"></div>
+<h2> Skywards Aerospace: Explorez les Cieux de l'Aérospatiale </h2>
+
+			<div> <!-- close header  -->
+			<p />
+    
+<div class="navigation">
+<ul>	
+ <a href="#" class="underline-hover"><li><a href="/">Home</a></li>
+    <li><a href="/database/databases.php">Aviation</a></li>
+    <li><a href="/aerospace/">Aerospace</a></li>
+    <li><a href="/missions/">Missions</a></li>
+    <li><a href="/about/news.php">News</a></li>
+    <li><a href="/about/contact.php">Contact</a></li>
+    
+   
+    <li><a href="/about/">About</a></li></a>
+  </ul>
+</div>
+
+<div class="search-container">
+  <input type="text" placeholder="Search...">
+  <button>Search</button>
+</div>
+
+	&nbsp;&nbsp;&nbsp;&nbsp;
+
+<BR/>
+---
+
+<style>
+  .large-text {
+    font-size:5px;
+  }
+</style>
+
+<p class="large-text"><p14><B>Bienvenue sur notre site dédié à l'aviation et à l'aérospatiale !</B></p14></p>
+<BR/>
+Nous sommes ravis de vous accueillir dans cet espace dédié aux passionnés de l'aviation et aux enthousiastes de l'aérospatiale. Notre site est conçu pour vous tenir informé(e) des dernières avancées, projets et activités dans ces domaines passionnants.
+<BR/><BR/>
+Notre objectif est de fournir un contenu de qualité, soigneusement sélectionné, pour nourrir votre intérêt et votre fascination pour ces secteurs en constante évolution.
+<BR/>
+Nous couvrons une vaste gamme de sujets, allant des avions commerciaux aux satellites, en passant par les missions spatiales et les recherches scientifiques.
+<BR/><BR/>
+Merci de votre visite et de votre intérêt pour l'aviation et l'aérospatiale. Nous sommes impatients de vous accompagner dans ce voyage passionnant !
+<BR/><BR/>
+L'équipe de 1Min.Aviation & SkyWards Horizons</p14>
+<BR/>
+---	
+<BR/>
+<BR/>
+	
+<img src="https://cdn.avsafetydata.com/graphics/ASNsocial2.png" alt="ASN on social media" usemap="#ASNsocialmap">
+<map name="ASNsocialmap">
+  <area shape="rect" coords="0,0,30,30" alt="ASN Instagram" href="https://linktr.ee/1min.aviation">
+  <area shape="rect" coords="30,0,65,30" alt="ASN Twitter" href="https://linktr.ee/1min.aviation">
+  <area shape="rect" coords="65,0,98,30" alt="ASN Youtube" href="https://www.youtube.com/user/@1 Min.Aviation">
+  <area shape="rect" coords="98,0,129,30" alt="ASN LinkedIn" href="https://www.instagram.com/1min.aviation">
+</map> 
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+	
+	</div>   <!-- close navigation -->
+	
+	<div class="trail" id="noprint"> 
+		 
+	</div>    <!-- close trail  -->
+
+<div id="contentwrapper">
+<div id="contentcolumn"><div class="innertube">
+<p />
+<div class="infoboxtitle"><h2 class="subtitle">
+<p10>AEROSPACE RESSOURCES CONTENTS</p10></h2></div>
+<div class="infobox">
+
+   <table class="infobox_highlight">
+<tr>
+<td class="listmain_nohover"><img src="https://cdn.avsafetydata.com/graphics/type200/LJ-35.png" alt="Learjet 35A silhoutte" width="200" height="90" /></td>
+
+<td class="listmain_nohover"><img src="https://cdn.avsafetydata.com/graphics/type200/LJ-35.png" alt="Learjet 35A silhoutte" width="200" height="90" /></td>
+<td class="listmain_nohover"><b>15-MAY-2023 - AER AirEXpo, <a href="/database/record.php?id=20230515-0">more</a>.
+</td>
+
+<BR/>
+<p14 style="color:black; font-style:italic;">Une maison située dans le Sud-Est de la France en <a href="https://www.laregion.fr/"><p4>Occitanie</p4></a>, elle est constituée de plusieurs pièces spécifiques : <b>salle de cinéma</b>, <b>chambres des invités</b>, pièce spéciales adapté au gaming à la programmation<b>(Night code)</b> & une <b>grande piscine</b> et beaucoup d'autre choses...</p14>
+<BR/>
+<a href="https://www.instagram.com/1min.aviation/"><p6><B>Instagram</B></p6></a>
+<BR/>
+<BR/>
+<style>
+  .icon-container {
+    display: inline-block;
+    border: 2px solid #000;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+  }
+</style>
+
+<div class="icon-container">
+<!-- Taille 2 fois plus grande -->
+  <a href="https://www.instagram.com/1min.aviation/">
+  <i class="fab fa-instagram" style="font-size: 48px;"></i>
+  </a>
+</div>
+
+<BR/>
+<BR/>
+<p11>
+<B>Sites Web :</B>
+<BR/><BR/>
+<B>FlightRadar24</B> <a href="https://www.flightradar24.com"><B>FlightRadar24</B></a>: Suivez les vols en temps réel et obtenez des informations sur les avions.
+Airliners.net (https://www.airliners.net/) : Parcourez une vaste collection de photos d'avions du monde entier.
+<B>Aviation Safety Network</B> <a href="https://aviation-safety.net"><B>Aviation Safety Network</B></a>: Consultez des informations sur les incidents et accidents aériens.
+<BR/>
+<BR/><B>Livres</B> :
+<BR/>
+"Introduction à l'aviation" de John D. Anderson : Un guide complet sur les principes de base de l'aviation.
+"The Wright Brothers" de David McCullough : Une biographie captivante des frères Wright et de leur contribution à l'aviation.
+"Sully: My Search for What Really Matters" de Chesley B. Sullenberger : L'autobiographie du célèbre pilote Sully, connu pour avoir sauvé l'avion US Airways en amerrissant sur l'Hudson.
+<BR/>Chaînes YouTube :
+<BR/>
+<B>Aviation101</B> <a href="https://www.youtube.com/c/Aviation101"><B>Aviation101</B></a> : Des vidéos éducatives sur les principes de vol, les avions et l'aviation en général.<BR>: Des vidéos éducatives sur les principes de vol, les avions et l'aviation en général.<BR/>
+<B>Mentour Pilot</B><a href="https://www.youtube.com/c/MentourPilot"><B>Mentour Pilot</B></a> : Des analyses approfondies de différentes situations de vol et des réponses à des questions fréquentes sur l'aviation.<BR/>
+<B>TygSurInternet</B> <a href="https://www.youtube.com/@TygSurInternet"><B>TygSurInternet</B></a> : Partage la passion et pleins d'astuces sur Microsoft Flight Simulator 2020.<BR/>
+<B>Captain Joe</B> <a href="https://www.youtube.com/@flywithcaptainjoe"><B>Captain Joe</B></a> : Découvrez-en plus sur le vol, vous êtes au bon endroit !
+<BR/>
+Podcasts :<BR/>
+<BR/>
+"<B>AvTalk - Aviation News and Discussion</B>": <BR/>Un podcast hebdomadaire couvrant les dernières nouvelles et les événements de l'aviation (disponible sur les plateformes de podcast populaires).
+Flightradar24<BR/>
+Live Flight Tracker - Real-Time Flight Tracker Map | Flightradar24<BR/>
+The world’s most popular flight tracker. Track planes in real-time on our flight tracker map and get up-to-date flight status & airport information.<BR/>
+<BR/><BR/>
+Airliners.net
+Aviation Safety Network
+Aviation Safety Network - The resource centre for aircraft accidents and civil aviation safety issues.
+<BR/><BR/>
+<b>YouTube</b><BR/>
+Aviation101<BR/>
+Aviation and Filmmaking run deep for me - I bounce between being a pilot that happens to make films, or a filmmaker who happens to be a pilot. Regardless, here I share my aviation experiences with you through the lens of a camera. Welcome!
+<BR/><BR/>
+<b>Sécteur Aérospatiale</b> :
+<BR/>
+NASA - L'agence spatiale américaine offre une multitude de ressources sur son site web, notamment des articles, des vidéos, des images et des informations sur les missions en cours et passées. Visitez <a href="https://www.nasa.gov/"><B>NASA </B></a>
+<BR/>
+<B>European Space Agency </B><BR/>
+- L'Agence spatiale européenne propose également une variété de ressources sur l'exploration spatiale, les misxplorer <a href="https://www.esa.int/"><B>ESA </B></a>
+ sions, les technologies et les découvertes. Vous pouvez explorer <a href="https://www.esa.int/"><B>ESA </B></a>
+<BR/>
+<B>Smithsonian National Air and Space Museum </B><BR/>
+- Ce musée basé à Washington, D.C., abrite une vaste collection d'artefacts aéronautiques et spatiaux. Leur site web propose des expositions virtuelles, des vidéos, des images et des informations détaillées sur l'histoire de l'aviation et de l'aérospatiale : <a href="https://airandspace.si.edu/"><B>Airandspace </B></a>
+<BR/>
+<B>SpaceX</B><BR/> La société aérospatiale SpaceX, fondée par Elon Musk, est connue pour ses missions spatiales innovantes. Vous pouvez consulter leur site web pour des informations sur leurs lanceurs, leurs vaisseaux spatiaux et leurs projets futurs : <a href="https://www.spacex.com/"><B>SpaceX </B></a>
+<BR/>
+<B>Aerospace.org</B><BR/>
+- Ce site propose des informations et des ressources sur divers sujets liés à l'aérospatiale, notamment les satellites, les lancements, les débris spatiaux et les applications spatiales. Vous pouvez en apprendre davantage sur : <a href="https://aerospace.org/"><B>Aerospace.org </B></a>
+<BR/>
+<B>YouTube - </B><BR/>
+YouTube est une excellente source pour trouver des vidéos éducatives et informatives sur l'aérospatiale. De nombreuses chaînes spécialisées, telles que "NASA" et "European Space Agency", proposent du contenu officiel. Vous pouvez également rechercher des chaînes populaires comme "Scott Manley" et "Everyday Astronaut" pour des analyses et des explications détaillées.
+<BR/><B>NASA</B><BR/>
+National Aeronautics and Space Administration
+NASA.gov brings you the latest news, images and videos from America's space agency, pioneering the future in space exploration, scientific discovery and aeronautics research.<BR/>
+National Aeronautics and Space Administration<BR/>
+European Space Agency<BR/>
+The European Space Agency portal features the latest news in space exploration, human spaceflight, launchers, telecommunications, navigation, monitoring and space science.<BR/>
+Homepage<BR/>
+<B>The Smithsonian's National Air and Space Museum</B>maintains the world's largest and most significant collection of aviation and space artifacts, encompassing all aspects of human flight. It operates two landmark facilities that, together, welcome more than
+Homepage<BR/>
+<BR/>
+SpaceX designs, manufactures and launches advanced rockets and spacecraft.<BR/>
+<B>SpaceX</B><BR/><BR/>
+Home | The Aerospace Corporation<BR/>
+Aerospace operates the only federally funded research and development center (FFRDC) committed exclusively to the space enterprise. Our technical experts span every discipline of space-related science and engineering.<BR/>
+<BR/>
+
+<div id="music-waves"></div>
+
+<BR/>
+<BR/>
+</p11>
+<BR/>
+<div class="navigation">
+<ul>
+<BR/><BR/>
+<span>
+<a class="inset-focus awx-switch-button awx-menu-list-toggler__button close" data-state-id=menu-365996905-state role=button aria-expanded=true href="#">
+<span class=visually-hidden>
+<span class=visually-hidden>
+<B>Commercial Aircraft</B>
+</span>
+<a>
+<label class="awx-switch-label awx-menu-list-toggler__label" for=menu-365996905-state aria-hidden=true><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--chevrondown" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-chevrondown"/>
+</svg></label>
+<div style="--length: 10; --long-title-count-sm: 0;
+      --long-title-count-md: 0" id=awx-menu-list-wrapper-425890119 class="awx-menu-list__wrapper awx-menu-list__wrapper--level2"><ul class="awx-menu-list awx-menu-list--level2"><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level">
+<a href="/en/products-services/commercial-aircraft" title="Airbus’ diverse and innovative product line of aircraft includes everything from commercial jetliners – such as the best-selling A320 – to freighters and private jets." class="inset-focus awx-menu-list__link awx-menu-list__link--parent awx-menu-list__link--level2" data-drupal-link-system-path="node/401"><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--home-outline" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-home-outline"/>
+</svg> Commercial Aircraft</a>
+</li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/commercial-aircraft/passenger-aircraft" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/561">Passenger Aircraft</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/commercial-aircraft/freighter-family" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/566">Freighter Family</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="https://www.acj.airbus.com/en" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" rel=external target=_blank>Corporate Jets</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="https://aircraft.airbus.com/en" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" rel=external target=_blank>Aircraft and Services</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/commercial-aircraft/cabin-and-comfort" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/551">Cabin and Comfort</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/commercial-aircraft/cockpits" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/621">Cockpits</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/commercial-aircraft/airframes" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/46481">Airframes</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/commercial-aircraft/the-life-cycle-of-an-aircraft" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/586">The life cycle of an aircraft</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/commercial-aircraft/market" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/576">Market</a></li></ul></div></li><li class="awx-menu-list__item awx-menu-list__item--level1 awx-menu-list__item--last-parent"><input class="awx-switch-state awx-menu-list-state" id=menu-1807686362-state type=checkbox aria-hidden=true /><div class="awx-switch-toggler awx-menu-list-toggler" id=menu-1807686362-toggler><a href="/en/products-services/helicopters" class="awx-menu-list__link awx-menu-list__link--level1" tabindex=-1 aria-hidden=true data-drupal-link-system-path="node/406">Helicopters</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button open" data-state-id=menu-1807686362-state role=button aria-expanded=false href="#menu-1807686362-state">
+<span class=visually-hidden>
+Helicopters
+</span>
+</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button close" data-state-id=menu-1807686362-state role=button aria-expanded=true href="#">
+<span class=visually-hidden>
+Helicopters
+</span>
+</a>
+<label class="awx-switch-label awx-menu-list-toggler__label" for=menu-1807686362-state aria-hidden=true><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--chevrondown" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-chevrondown"/>
+</svg></label>
+</div> <div style="--length: 7; --long-title-count-sm: 0;
+      --long-title-count-md: 0" id=awx-menu-list-wrapper-1957394637 class="awx-menu-list__wrapper awx-menu-list__wrapper--level2"><ul class="awx-menu-list awx-menu-list--level2"><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level">
+<a href="/en/products-services/helicopters" class="inset-focus awx-menu-list__link awx-menu-list__link--parent awx-menu-list__link--level2" data-drupal-link-system-path="node/406"><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--home-outline" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-home-outline"/>
+</svg> Helicopters</a>
+</li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/helicopters/civil-helicopters" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/1811">Civil helicopters</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/helicopters/military-helicopters" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/1896">Military helicopters</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="https://www.airbuscorporatehelicopters.com/website/en/ref/home.html" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" rel=external target=_blank>Corporate helicopters - ACH</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="http://www.helicopters.airbus.com/website/en/ref/Pre-owned-Aircraft_298.html" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" rel=external target=_blank>Pre-owned helicopters</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/defence/uas" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2271">UAS</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/helicopters/hcare-services" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/1956">HCare services</a></li></ul></div></li><li class="awx-menu-list__item awx-menu-list__item--level1 awx-menu-list__item--last-parent"><input class="awx-switch-state awx-menu-list-state" id=menu-965304700-state type=checkbox aria-hidden=true /><div class="awx-switch-toggler awx-menu-list-toggler" id=menu-965304700-toggler><a href="/en/defence" class="awx-menu-list__link awx-menu-list__link--level1" tabindex=-1 aria-hidden=true data-drupal-link-system-path="node/411">Defence</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button open" data-state-id=menu-965304700-state role=button aria-expanded=false href="#menu-965304700-state">
+<span class=visually-hidden>
+Defence
+</span>
+</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button close" data-state-id=menu-965304700-state role=button aria-expanded=true href="#">
+<span class=visually-hidden>
+Defence
+</span>
+</a>
+<label class="awx-switch-label awx-menu-list-toggler__label" for=menu-965304700-state aria-hidden=true><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--chevrondown" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-chevrondown"/>
+</svg></label>
+</div> <div style="--length: 7; --long-title-count-sm: 0;
+      --long-title-count-md: 0" id=awx-menu-list-wrapper-2086456869 class="awx-menu-list__wrapper awx-menu-list__wrapper--level2"><ul class="awx-menu-list awx-menu-list--level2"><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level">
+<a href="/en/defence" class="inset-focus awx-menu-list__link awx-menu-list__link--parent awx-menu-list__link--level2" data-drupal-link-system-path="node/411"><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--home-outline" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-home-outline"/>
+</svg> Defence</a>
+</li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/defence/multi-domain-superiority" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2041">Multi-Domain-Superiority</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/defence/military-aircraft" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2061">Aircraft</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/defence/uas" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2271">UAS</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/defence/connectivity" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2071">Connectivity</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/defence/intelligence-and-data" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2076">Intelligence &amp; data</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/defence/milsatcom" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2081">MilSatCom</a></li></ul></div></li><li class="awx-menu-list__item awx-menu-list__item--level1 awx-menu-list__item--last-parent"><input class="awx-switch-state awx-menu-list-state" id=menu-1418083910-state type=checkbox aria-hidden=true /><div class="awx-switch-toggler awx-menu-list-toggler" id=menu-1418083910-toggler><a href="/en/space" class="awx-menu-list__link awx-menu-list__link--level1" tabindex=-1 aria-hidden=true data-drupal-link-system-path="node/416">Space</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button open" data-state-id=menu-1418083910-state role=button aria-expanded=false href="#menu-1418083910-state">
+<span class=visually-hidden>
+Space
+</span>
+</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button close" data-state-id=menu-1418083910-state role=button aria-expanded=true href="#">
+<span class=visually-hidden>
+Space
+</span>
+</a>
+<label class="awx-switch-label awx-menu-list-toggler__label" for=menu-1418083910-state aria-hidden=true><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--chevrondown" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-chevrondown"/>
+</svg></label>
+</div> <div style="--length: 10; --long-title-count-sm: 0;
+      --long-title-count-md: 0" id=awx-menu-list-wrapper-2063248391 class="awx-menu-list__wrapper awx-menu-list__wrapper--level2"><ul class="awx-menu-list awx-menu-list--level2"><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level">
+<a href="/en/space" class="inset-focus awx-menu-list__link awx-menu-list__link--parent awx-menu-list__link--level2" data-drupal-link-system-path="node/416"><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--home-outline" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-home-outline"/>
+</svg> Space</a>
+</li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/space/earth-observation" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2576">Earth observation</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/space/telecom" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2581">Telecom</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/space/navigation" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2586">Navigation</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/space/in-space-infrastructure" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2591">In Space infrastructure</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/space/on-ground-infrastructure" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2601">On ground infrastructure</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/space/equipment" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2606">Equipment</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/space/exploration" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2611">Exploration</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/space/business-solutions" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2616">Business solutions</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/space/customer-services" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2621">Customer services</a></li></ul></div></li><li class="awx-menu-list__item awx-menu-list__item--level1 awx-menu-list__item--last-parent"><input class="awx-switch-state awx-menu-list-state" id=menu-33122363-state type=checkbox aria-hidden=true /><div class="awx-switch-toggler awx-menu-list-toggler" id=menu-33122363-toggler><a href="/en/products-services/security" class="awx-menu-list__link awx-menu-list__link--level1" tabindex=-1 aria-hidden=true data-drupal-link-system-path="node/421">Security</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button open" data-state-id=menu-33122363-state role=button aria-expanded=false href="#menu-33122363-state">
+<span class=visually-hidden>
+Security
+</span>
+</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button close" data-state-id=menu-33122363-state role=button aria-expanded=true href="#">
+<span class=visually-hidden>
+Security
+</span>
+</a>
+<label class="awx-switch-label awx-menu-list-toggler__label" for=menu-33122363-state aria-hidden=true><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--chevrondown" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-chevrondown"/>
+</svg></label>
+</div> <div style="--length: 6; --long-title-count-sm: 0;
+      --long-title-count-md: 0" id=awx-menu-list-wrapper-2049399793 class="awx-menu-list__wrapper awx-menu-list__wrapper--level2"><ul class="awx-menu-list awx-menu-list--level2"><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level">
+<a href="/en/products-services/security" class="inset-focus awx-menu-list__link awx-menu-list__link--parent awx-menu-list__link--level2" data-drupal-link-system-path="node/421"><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--home-outline" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-home-outline"/>
+</svg> Security</a>
+</li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/security/cybersecurity" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/5011">Cybersecurity</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/security/critical-infrastructure" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2551">Critical infrastructure</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/security/public-safety" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2556">Public safety</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/security/maritime" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2541">Maritime</a></li><li class="awx-menu-list__item awx-menu-list__item--level2 awx-menu-list__item--last-level"><a href="/en/products-services/security/crisis-management" class="inset-focus awx-menu-list__link awx-menu-list__link--level2 awx-menu-list__link--drawer" data-drupal-link-system-path="node/2531">Crisis management</a></li></ul></div></li></ul></div></li><li class="awx-menu-list__item awx-menu-list__item--level0"><input class="awx-switch-state awx-menu-list-state" id=menu-1627182285-state type=checkbox aria-hidden=true /><div class="awx-switch-toggler awx-menu-list-toggler" id=menu-1627182285-toggler><a href="/en/innovation" class="awx-menu-list__link awx-menu-list__link--level0" title="Innovation happens when great ideas, people and challenges intersect. Discover how Airbus makes these intersections happen to positively impact our world." tabindex=-1 aria-hidden=true data-drupal-link-system-path="node/326">Innovation</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button open" data-state-id=menu-1627182285-state role=button aria-expanded=false href="#menu-1627182285-state">
+<span class=visually-hidden>
+Innovation
+</span>
+</a><a class="inset-focus awx-switch-button awx-menu-list-toggler__button close" data-state-id=menu-1627182285-state role=button aria-expanded=true href="#">
+<span class=visually-hidden>
+Innovation
+</span>
+</a>
+<label class="awx-switch-label awx-menu-list-toggler__label" for=menu-1627182285-state aria-hidden=true><svg width=24 height=24 viewbox="0 0 24 24" class="awx-icon awx-icon--chevrondown" role=img aria-hidden=true focusable=false><use xlink:href="#awx-icon-chevrondown"/>
+</svg></label>
+</div> <div style="--length: 5; --long-title-count-sm: 0;
+      --long-title-count-md: 0" role=dialog aria-modal=true aria-labelledby=innovation-1474888948 id=awx-menu-list-wrapper-1217178250 class="awx-menu-list__wrapper awx-menu-list__wrapper--level1"><div class="awx-switch-toggler awx-menu-list-back-toggler">
+<a class="inset-focus awx-switch-button awx-menu-list-back-toggler__button not-first-focusable" data-state-id=menu-1627182285-state role=button aria-expanded=true href="#">
+<span class=visually-hidden>
+<BR/><BR/>
+
+
+<div class="navigation">
+<ul>
+<BR/>
+
+<script type="text/javascript" src="static/home-page-min.js"> </script>
+
+    <script type="text/javascript" src="static/deps-min.js"></script>
+    <script type="text/javascript" async src="static/player-min.js"></script>
+
+    <style>
+
+p {
+  position: relative;
+  font-family: 'D-DIN-Medium', Arial, Verdana, sans-serif;
+  font-size: 20px !important;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 38px !important;
+  color: #FFFFFF;
+  margin: 0px !important;
+}
+@media (max-width: (960px) {
+  h1 {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  p {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}
+
+ </style>
+  
+    <div id="wrapper">
+      <div id="header" role="navigation" class="section" data-limit=".15">
+  <div class="header-bg"></div>
+  <div class="header-inner">
+    <a href="/" id="logo" aria-label="Link to go to the homepage">
+      <svg version="1.1" x="0px" y="0px" viewbox="0 0 400 50" alt="SpaceX Logo">
+        <title>SpaceX Logo</title>
+        <g class="letter_s">
+          <path class="fill-white" d="M37.5,30.5H10.9v-6.6h34.3c-0.9-2.8-3.8-5.4-8.9-5.4H11.4c-5.7,0-9,2.1-9,6.7v4.9c0,4,3.4,6.3,8.4,6.3h26.9v7H1.5
+          c0.9,3.8,3.8,5.8,9,5.8h27.1c5.7,0,8.5-2.2,8.5-6.9v-4.9C46.1,33.1,42.8,30.8,37.5,30.5z"/>
+        </g>
+        <g class="letter_p">
+          <path class="fill-white" d="M91.8,18.6H59v30.7h9.3V37.5h24.2c6.7,0,10.4-2.3,10.4-7.7v-3.4C102.8,21.4,98.6,18.6,91.8,18.6z M94.8,28.4
+          c0,2.2-0.4,3.4-4,3.4H68.3l0.1-8h22c4,0,4.5,1.2,4.5,3.3V28.4z"/>
+        </g>
+        <g class="letter_a">
+          <polygon class="fill-white" points="129.9,17.3 124.3,24.2 133.8,37.3 114,37.3 109.1,42.5 137.7,42.5 142.6,49.3 153.6,49.3 	"/>
+        </g>
+        <g class="letter_c">
+          <path class="fill-white" d="M171.4,23.9h34.8c-0.9-3.6-4.4-5.4-9.4-5.4h-26c-4.5,0-8.8,1.8-8.8,6.7v17.2c0,4.9,4.3,6.7,8.8,6.7h26.3
+          c6,0,8.1-1.7,9.1-5.8h-34.8V23.9z"/>
+        </g>
+        <g class="letter_e">
+          <polygon class="fill-white" points="228.3,43.5 228.3,34.1 247,34.1 247,28.9 218.9,28.9 218.9,49.3 260.4,49.3 260.4,43.5 	"/>
+          <rect class="fill-white" x="219.9" y="18.6" width="41.9" height="5.4"/>
+        </g>
+        <g class="letter_x">
+          <path class="fill-white" d="M287.6,18.6H273l17.2,12.6c2.5-1.7,5.4-3.5,8-5L287.6,18.6z"/>
+          <path class="fill-white" d="M308.8,34.3c-2.5,1.7-5,3.6-7.4,5.4l13,9.5h14.7L308.8,34.3z"/>
+        </g>
+        <g class="letter_swoosh">
+          <path class="fill-white" d="M399,0.7c-80,4.6-117,38.8-125.3,46.9l-1.7,1.6h14.8C326.8,9.1,384.3,2,399,0.7L399,0.7z"/>
+        </g>
+      </svg>
+    </a>
+    <div id="navigation">
+      <ul class="nav-links">
+        <li class="nav-item"><a href="/vehicles/falcon-9/" aria-label="Learn about the Falcon 9 vehicle">Falcon 9</a></li>
+        <li class="nav-item"><a href="/vehicles/falcon-heavy/" aria-label="Learn about the Falcon Heavy vehicle">Falcon Heavy</a></li>
+        <li class="nav-item"><a href="/vehicles/dragon/" aria-label="Learn about the Dragon vehicle">Dragon</a></li>
+        <li class="nav-item"><a href="/vehicles/starship/" aria-label="Learn about the Starship vehicle">Starship</a></li>
+        <li class="nav-item"><a href="/human-spaceflight/" aria-label="Learn about Human Spaceflight">Human Spaceflight</a></li>
+        <li class="nav-item"><a href="/rideshare/" aria-label="Learn about the Rideshare program">Rideshare</a></li>
+        <li class="nav-item"><a href="/starshield/" aria-label="Learn about the Starshield program">Starshield</a></li>
+        <li class="nav-item"><a href="https://www.starlink.com" aria-label="Learn about Starlink internet" target="_">Starlink</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div id="navigation-right">
+    <ul class="nav-links">
+      <li class="nav-item"><a href="https://shop.spacex.com/" rel="noopener" aria-label="Go to the SpaceX shop" target="_blank">Shop</a></li>
+    </ul>
+  </div>
+
+  <div id="menu-close"></div>
+  <div id="menu">
+    <div id="menu-background"></div>
+    <div id="menu-navigation">
+      <ul class="nav-links">
+        <li class="nav-item primary"><a href="/vehicles/falcon-9/" aria-label="Learn about the Falcon 9 vehicle">Falcon 9</a></li>
+        <li class="nav-item primary"><a href="/vehicles/falcon-heavy/" aria-label="Learn about the Falcon Heavy vehicle">Falcon Heavy</a></li>
+        <li class="nav-item primary"><a href="/vehicles/dragon/" aria-label="Learn about the Dragon vehicle">Dragon</a></li>
+        <li class="nav-item primary"><a href="/vehicles/starship/" aria-label="Learn about the Starship vehicle">Starship</a></li>
+        <li class="nav-item primary"><a href="/human-spaceflight/" aria-label="Learn about Human Spaceflight">Human Spaceflight</a></li>
+        <li class="nav-item primary"><a href="/rideshare/" aria-label="Learn about the Rideshare program">Rideshare</a></li>
+        <li class="nav-item primary"><a href="/starshield/" aria-label="Learn about the Starshield program">Starshield</a></li>
+        <li class="nav-item primary"><a href="https://www.starlink.com" aria-label="Learn about Starlink internet" target="_">Starlink</a></li>
+        <li class="nav-item secondary"><a href="/mission/" aria-label="Learn about SpaceX's mission">Mission</a></li>
+        <li class="nav-item secondary"><a href="/launches/" aria-label="Learn about SpaceX's launches">Launches</a></li>
+        <li class="nav-item secondary"><a href="/careers/" aria-label="Learn about SpaceX careers">Careers</a></li>
+        <li class="nav-item secondary"><a href="/updates/" aria-label="Learn about the latest updates">Updates</a></li>
+        <li class="nav-item secondary"><a href="https://shop.spacex.com/" rel="noopener" aria-label="Go to the SpaceX shop" target="_blank">Shop</a></li>
+      </ul>
+    </div>
+  </div>
+  <button id="hamburger" aria-expanded="false" aria-controls="menu" aria-label="Menu" role="button" aria-haspopup="dialog">
+    <div id="bar1" class="bar"></div>
+    <div id="bar2" class="bar"></div>
+    <div id="bar3" class="bar"></div>
+  </button>
+</div>
+
+
+      <div id="scroller">
+        <div id="tiles">
+          <div id="placeholder" class="section">
+            <div class="background"></div>
+            <div class="section-inner feature">
+              <div class="inner-left-bottom"></div>
+            </div>
+          </div>
+        </div>
+
+    <div id="modal"
+     class="modal"
+     aria-modal="true"
+     aria-label="YouTube video modal">
+  <div class="modal-transform">
+    <div class="modal-bg"></div>
+    <div class="modal-inner">
+      <div class="youtube-wrapper"></div>
+      <span></span>
+    </div>
+   
+
+<form>
+	<input type="text">
+  <input type="submit"
+  value="send">
+<BR/>
+<script>
+let color = document.body.style.backgroundColor;
+if (color == "red"){ document.body.style.background ="purple";}
+else {document.body.backgroundColor = "red";}
+}
+<BR/>
+<img src="https://exemple.com/chemin/vers/votre/image.jpg" alt="Description de l'image">
+
+<a href="/en" rel=home class=site-logo>
+<img src="/themes/custom/airbus_web_experience_ui/logo.svg" alt="Go to the home page" class=site-logo__img width=130 height=24 />
+</a>
+ 
+<BR/>
+<BR/>
+<b> <img src="Paguiel Villa.jpg" alt="Paguiel Villa"></b>
+ <BR/>
+ <BR/>
+
+<script>
+function initMap() {
+  var map = new google.maps.Map(document.getElementById('carte'), {
+    center: {lat: 48.8566, lng: 2.3522},
+    zoom: 12
+  });
+}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=VOTRE_CLÉ_API&callback=initMap"></script>
+<BR/>
+		<style>
+  h1 {
+			font-family: Arial, sans-serif;
+		}
+	</style>
+	<BR/>
+
+ <label for="nom">Nom :</label>
+ <input type="text" id="nom" name="nom"><br>
+ <label for="email">Email :</label>
+ <input type="email" id="email" name="email"><br>
+
+  <label for="message">Message :</label>
+  <textarea id="message" name="message"></textarea><br>
+
+  <input type="submit" value="Envoyer">
+ </form>
+ <BR/>
+  <BR/>
+
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="SpaceX" />
+    <meta name="keywords" content="space,spacex,aerospace,elon musk,mars,falcon 9,falcon heavy,dragon" />
+    <meta name="description" content="SpaceX designs, manufactures and launches advanced rockets and spacecraft. The company was founded in 2002 to revolutionize space technology, with the ultimate goal of enabling people to live on other planets." />
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="SpaceX"/>
+    <meta property="og:description" content="SpaceX designs, manufactures and launches advanced rockets and spacecraft."/>
+    <meta property="og:site_name" content="SpaceX"/>
+    <meta property="og:image" content="https://www.spacex.com/static/images/share.jpg"/>
+    <meta itemprop="name" content="SpaceX" />
+    <meta itemprop="image" content="https://www.spacex.com/static/images/share.jpg" />
+    <meta property="og:url" content="http://www.spacex.com"/>
+    <meta name="twitter:card" content="summary_large_image"/>
+    <meta name="twitter:site" content="@spacex" />
+    <meta name="twitter:description" content="SpaceX designs, manufactures and launches advanced rockets and spacecraft."/>
+    <meta name="twitter:title" content="SpaceX"/>
+    <meta name="twitter:image" content="https://www.spacex.com/static/images/share.jpg"/>
+    <title>SpaceX</title>
+    <link rel="stylesheet" type="text/css" href="style.min.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="fix.css" media="screen">
+    <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+    <link rel="Shortcut Icon" type="image/ico" href="static/images/favicon.ico">
+    <meta name="viewport" content="width=device-width, user-scalable=1">
+    
+
+
+</body>
+</html>
